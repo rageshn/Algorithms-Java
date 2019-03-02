@@ -1,5 +1,25 @@
 package algorithms.sorting;
 
+/*
+ * Algorithm:
+ * ----------
+ * 
+ *  C = output array (length = n)
+ *	A = First sorted array (length = n/2)
+ *	B = Second sorted array (length = n/2)
+ *
+ *  set i = 1 and j = 1
+ *  
+ *  for k = 1 to n
+ *    	if A[i] < B[j]
+ *       	C[k] = A[i]
+ *       	i++
+ *   	elif B[j] < A[i]
+ *        	C[k] = B[j]
+ *        	j++
+ *	end
+ */
+
 public class Mergesort {
 	
 	
