@@ -18,6 +18,10 @@ package algorithms.sorting;
  *        	C[k] = B[j]
  *        	j++
  *	end
+ *
+ * Time complexity: O(nlogn)
+ * Space complexity: n
+ * 
  */
 
 public class Mergesort {
