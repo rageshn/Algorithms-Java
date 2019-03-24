@@ -1,5 +1,22 @@
 package algorithms.graphs;
 
+/*
+ * Also known as Karger Minimum cut problem.
+ *
+ * Goal: In an undirected graph G = (V, E), compute a cut with fewest number of crossing edges.
+ *
+ * Algorithm:
+ * -----------
+ * While there are more than 2 nodes:
+ *    Pick remaining edges (U, V) uniformly at random.
+ *    Merge (or contract) U and V into a single node.
+ *    remove self-loops
+ * return the cut represented by final 2 vertices.
+ *
+ *
+ * Time complexity: Polynomial over 'n' and 'm'. Nearly Omega(n^2 * m)
+ */
+
 import java.io.*;
 import java.util.*;
 
@@ -43,7 +60,7 @@ public class Randomcontraction {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		File file = new File("/home/ragesh/eclipseworkspace/Algorithms-Java/src/main/java/algorithms/graphs/graph");
+		File file = new File("/home/ragesh/eclipseworkspace/Algorithms-Java/resources/graph");
 		BufferedReader bReader = new BufferedReader(new FileReader(file));
 		String line;
 		Map<Integer, List> graph = new HashMap<Integer, List>();

@@ -115,7 +115,7 @@ public class MinCuts {
 	public static void construct(HashMap<Integer, ArrayList<Integer>> adjList, 
 			ArrayList<Integer> vertices) throws IOException
 	{
-		File file = new File("/home/ragesh/eclipseworkspace/Algorithms-Java/src/main/java/algorithms/graphs/graph");
+		File file = new File("/home/ragesh/eclipseworkspace/Algorithms-Java/resources/graph");
 		BufferedReader input = new BufferedReader(new FileReader(file));
 		try 
 		{
